@@ -1,4 +1,8 @@
 @echo off
+
+color a
+echo hacking the mainframe
+
 pushd %appdata%\PolyMC\instances
 	if exist %appdata%\PolyMC\instances\sboob-modpack (
 		pushd sboob-modpack
