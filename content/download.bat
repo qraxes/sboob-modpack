@@ -1,13 +1,13 @@
 @echo off
 pushd %appdata%\PolyMC\instances
-	if exist %appdata%\PolyMC\instances\TheJ-Modpack-Client (
-		pushd TheJ-Modpack-Client
+	if exist %appdata%\PolyMC\instances\sboob-modpack (
+		pushd sboob-modpack
 			git pull
 		popd
 	) else (
-		git clone https://git.badcoder.dev/rwf93/TheJ-Modpack-Client
+		git clone https://git.badcoder.dev/rwf93/sboob-modpack
 	
-		pushd TheJ-Modpack-Client
+		pushd sboob-modpack
 			copy instance.default.cfg instance.cfg
 		popd
 	)
