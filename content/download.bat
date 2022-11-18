@@ -13,6 +13,7 @@ pushd %appdata%\PolyMC\instances
 	
 		pushd sboob-modpack
 			copy instance.default.cfg instance.cfg
+			copy mmc-pack.default.json mmc-pack.json
 		popd
 	)
 popd
