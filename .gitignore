@@ -1,0 +1,6 @@
+.minecraft/*
+!.minecraft/mods
+.minecraft/mods/.index
+
+natives
+instance.cfg
