@@ -1,19 +1,27 @@
 @echo off
+setlocal ENABLEDELAYEDEXPANSION
+
+SET mypath=%~f0
 
 color a
 echo hacking the mainframe
 
 pushd %appdata%\PolyMC\instances
-	if exist %appdata%\PolyMC\instances\sboob-modpack (
+	if exist sboob-modpack (
 		pushd sboob-modpack
+
+			:: Im going to fucking lose it
 			git pull
+			move /Y .\content\download.bat %mypath%
 		popd
 	) else (
-		git clone https://git.badcoder.dev/rwf93/sboob-modpack
-	
+		git clone https://github.com/2048khz-gachi-rmx/sboob-modpack
+
 		pushd sboob-modpack
 			copy instance.default.cfg instance.cfg
 			copy mmc-pack.default.json mmc-pack.json
+
+			move /Y .\content\download.bat %mypath%
 		popd
 	)
 popd
