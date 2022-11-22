@@ -15,7 +15,7 @@ pushd %appdata%\PolyMC\instances
 			move /Y .\content\download.bat %mypath%
 		popd
 	) else (
-		git clone https://github.com/2048khz-gachi-rmx/sboob-modpack
+		git clone https://github.com/qraxes/sboob-modpack
 
 		pushd sboob-modpack
 			copy instance.default.cfg instance.cfg
